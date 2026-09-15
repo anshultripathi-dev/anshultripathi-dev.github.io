@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anshul Tripathi | Software Engineering</title>
+<style>
+:root{--bg:#070b12;--card:#0e1621;--text:#edf3fb;--muted:#9aa8b8;--line:#1c2a3a;--blue:#3b9cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;background:#070b12e8;border-bottom:1px solid var(--line);z-index:5}nav .wrap{height:64px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800}.brand span{color:var(--blue)}nav a{color:var(--muted);margin-left:22px;font-size:14px}
+.hero{min-height:78vh;display:flex;align-items:center;border-bottom:1px solid var(--line)}.eyebrow,.kicker{color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(48px,8vw,88px);line-height:1;margin:18px 0;letter-spacing:-.05em}h1 span{color:var(--blue)}.lead{font-size:19px;color:var(--muted);max-width:760px}.buttons{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}.btn{border:1px solid var(--line);padding:11px 17px;border-radius:8px;font-weight:600}.primary{background:var(--blue);color:#03101c;border-color:var(--blue)}
+section{padding:82px 0;border-bottom:1px solid var(--line)}h2{font-size:36px;margin:6px 0 28px;letter-spacing:-.03em}.muted{color:var(--muted);max-width:820px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:linear-gradient(145deg,#0e1621,#0a1018);border:1px solid var(--line);border-radius:13px;padding:25px}.card h3{margin:0 0 8px;font-size:20px}.card p,.card li{color:var(--muted);font-size:14px}.tags{margin-top:15px;display:flex;gap:7px;flex-wrap:wrap}.tag{border:1px solid var(--line);border-radius:99px;padding:4px 9px;color:#b9c9da;font-size:12px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.skill{background:var(--card);border:1px solid var(--line);padding:16px;border-radius:9px}.skill strong{display:block}.skill span{color:var(--muted);font-size:13px}
+.timeline{border-left:1px solid var(--line);padding-left:23px}.item{margin-bottom:30px;position:relative}.item:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--blue);left:-28px;top:9px}.meta{color:var(--blue);font-size:13px}.item h3{margin:3px 0}.item p{color:var(--muted);margin:3px 0}
+footer{padding:25px 0;color:#708092;font-size:12px}@media(max-width:700px){nav .links{display:none}.grid,.skills{grid-template-columns:1fr}.hero{min-height:auto;padding:80px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#">ANSHUL<span>.</span></a><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Software Engineering · Cloud · Systems · AI</div>
+<h1>Build. <span>Deploy.</span><br>Keep learning.</h1>
+<p class="lead">I'm Anshul Tripathi, an Integrated M.Tech. Software Engineering student at VIT Vellore exploring software engineering, cloud infrastructure, DevOps, embedded systems and emerging AI technologies.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
+</div></header>
+
+<section id="about"><div class="wrap"><div class="kicker">01 / About</div><h2>Curious about how systems work.</h2>
+<p class="muted">I have a strong programming foundation, with Python as a go-to language, and a growing focus on Linux, AWS, cloud infrastructure and DevOps. I enjoy understanding systems end-to-end, from software and automation to infrastructure and hardware.</p>
+<p class="muted">I'm also exploring AI/ML, particularly <b style="color:white">Agentic AI, Retrieval-Augmented Generation (RAG), and LLM-based workflows</b>, while continuing to strengthen practical engineering skills.</p></div></section>
+
+<section id="projects"><div class="wrap"><div class="kicker">02 / Selected work</div><h2>Things I've built.</h2>
+<div class="grid">
+<div class="card"><h3>Multi-Payload BLE HID Automation System</h3><p>ESP32-based BLE HID system combining embedded firmware, physical controls and wireless HID communication for hardware-triggered input automation.</p><ul><li>Five-button hardware interface and predefined HID payloads.</li><li>BLE HID-over-GATT and modular firmware.</li><li>Evaluated across Windows, macOS and Android.</li><li>Associated with a published Indian patent application.</li></ul><div class="tags"><span class="tag">ESP32</span><span class="tag">BLE</span><span class="tag">Embedded</span><span class="tag">IoT</span></div></div>
+<div class="card"><h3>Smart Home Cybersecurity IDS</h3><p>An IoT-focused intrusion detection system combining ESP32 smart-home devices, a Python cybersecurity engine, rule-based detection, machine-learning anomaly detection and a physical security response controller.</p><ul><li>Collected real-time telemetry from an ESP32 smart-home device over HTTP/REST.</li><li>Combined threshold-based IDS rules with an Isolation Forest anomaly detector.</li><li>Built a decision engine that classifies the environment as SAFE or ATTACK.</li><li>Triggered physical alerts through a second ESP32 using LEDs, buzzer and OLED display.</li></ul><div class="tags"><span class="tag">ESP32</span><span class="tag">Python</span><span class="tag">Cybersecurity</span><span class="tag">Machine Learning</span><span class="tag">IoT</span></div><div class="buttons"><a class="btn" href="https://github.com/anshultripathi-dev/SmartHomeCyberSecurity" target="_blank">View on GitHub</a></div></div>
+<div class="card"><h3>Cloud & DevOps Lab</h3><p>A growing collection of hands-on work around Linux, AWS, infrastructure, deployment and automation.</p><ul><li>Build reproducible cloud infrastructure.</li><li>Automate deployment and operational workflows.</li><li>Document architecture and engineering decisions.</li></ul><div class="tags"><span class="tag">AWS</span><span class="tag">Linux</span><span class="tag">DevOps</span></div></div>
+<div class="card"><h3>Agentic AI & RAG Experiments</h3><p>An evolving collection of experiments around LLM applications, retrieval, tool use and agentic workflows.</p><ul><li>Explore retrieval-grounded applications.</li><li>Experiment with tool-using agents and workflows.</li><li>Focus on practical AI systems.</li></ul><div class="tags"><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Agentic AI</span></div></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><div class="kicker">03 / Toolkit</div><h2>What I work with.</h2><div class="skills">
+<div class="skill"><strong>Programming</strong><span>Python · Java</span></div><div class="skill"><strong>Cloud</strong><span>AWS · Cloud Infrastructure · OCI</span></div><div class="skill"><strong>Systems</strong><span>Linux · Automation</span></div><div class="skill"><strong>DevOps</strong><span>Infrastructure · Deployment</span></div><div class="skill"><strong>Embedded & IoT</strong><span>ESP32 · BLE · Embedded Systems · IoT</span></div><div class="skill"><strong>Cybersecurity & ML</strong><span>IDS · Python · Flask · Scikit-learn · Isolation Forest</span></div><div class="skill"><strong>AI — Exploring</strong><span>LLMs · RAG · Agentic AI · AI/ML</span></div>
+</div></div></section>
+
+<section id="journey"><div class="wrap"><div class="kicker">04 / Journey</div><h2>Academic foundation.</h2><div class="timeline">
+<div class="item"><div class="meta">2023 — 2028</div><h3>Vellore Institute of Technology</h3><p>Integrated M.Tech. in Software Engineering · Current CGPA: <b style="color:white">8.83/10</b></p><p>Strong performance in programming and software engineering courses.</p></div>
+<div class="item"><div class="meta">2022</div><h3>Sharda International School, Gurugram</h3><p>CBSE Class XII · <b style="color:white">92%</b> · Computer Science 95% · English 96%</p></div>
+<div class="item"><div class="meta">2020</div><h3>Sharda International School, Gurugram</h3><p>CBSE Class X · <b style="color:white">97%</b> · Mathematics 100%</p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="kicker">05 / Credentials</div><h2>Certifications & IP.</h2><div class="grid">
+<div class="card"><h3>Oracle Cloud Infrastructure 2025</h3><p>Certified Foundations Associate · Issued August 2025</p></div>
+<div class="card"><h3>Oracle Java</h3><p>Certified Foundations Associate · Issued July 2026</p></div>
+<div class="card"><h3>Published Patent Application</h3><p>Indian Patent Application No. 202541131836 · Application awaiting examination</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="kicker">06 / Contact</div><h2>Let's build something.</h2><p class="muted">Open to internships, engineering opportunities, technical collaborations and conversations around cloud, DevOps, systems and applied AI.</p><div class="buttons"><a class="btn primary" href="mailto:anshul.tripathi.sis@gmail.com">Email</a><a class="btn" href="https://www.linkedin.com/in/anshul-tripathi-13b8a8300" target="_blank">LinkedIn</a><a class="btn" href="https://github.com/anshultripathi-dev" target="_blank">GitHub</a></div></div></section>
+<footer><div class="wrap">© 2026 Anshul Tripathi · Built with curiosity and a lot of debugging.</div></footer>
+</body></html>
