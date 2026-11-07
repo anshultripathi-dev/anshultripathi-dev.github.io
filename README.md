@@ -4,11 +4,12 @@ A responsive, dark-first personal engineering portfolio built as a lightweight s
 
 ## Files
 
-- `index.html` — portfolio, styles, diagrams and interactions. No build step or JavaScript dependency is required.
+- `index.html` — portfolio, styles, diagrams and interactions. No build step or external JavaScript library is required; all content is plain HTML and JavaScript only enhances it.
 - `resume.html` — print-friendly resume page with a **Print / Save as PDF** action.
 
 ## Features
 
+- Floating glass navigation with scroll-progress bar, interactive hero network (cursor-reactive, packet animation), cursor-lit cards and a "Send a request" walkthrough of the architecture map.
 - Responsive navigation, dark/light theme switch and reduced-motion support.
 - Filterable technical domains and expandable project case studies.
 - Selectable conceptual system architecture and a small command-limited profile terminal.
